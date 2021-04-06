@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fea.css">
+    <script src="https://kit.fontawesome.com/930700a0a4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+<body>
+    <div class="Container">
+        <nav>
+          <div class="logo">
+            <img src="img/pngkp.png" width="150" height="150">
+          </div>
+          <div class="delivery">
+            <div class="wrapper">
+              <input type="radio" name="select" id="option-1" checked>
+              <input type="radio" name="select" id="option-2">
+              <label for="option-1" class="option option-1">
+                <div class="dropdown">
+                  <!-- <button class="dropbtn">จัดส่งที่บ้าน</button> -->
+                  <div class="dropdown-content">
+                  <a href="#">จัดส่งที่บ้าน</a>
+                  <a href="#">รับสินค้าที่ร้าน</a>
+                  </div>
+                </div>
+                <div class="dot"></div>
+                <span>จัดส่งที่บ้าน</span>
+              </label>
+              <label for="option-2" class="option option-2">
+                <div class="dot"></div>
+                <span>รับสินค้าที่ร้าน</span>
+              </label>
+            </div> 
+          </div> 
+      <input type="checkbox" id="click">
+          <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <ul>
+      <li><a href="index.html">หน้าหลัก</a></li>
+      <li><a href="feature.html" class="active-menu">ฟีเจอร์</a></li>
+      <li><a href="cont.html">คอนเเทค</a></li>
+      <li><a href="#">เข้าสู่ระบบ</a></li>
+      <li><a href="#">ลงทะเบียน</a></li>
+      </ul>
+      </nav>
+    </div>
+      <div class="innter-container">
+          <div class="img-container">
+              
+              <a href="">สั่งซื้อสินค้า</a>
+            </div>
+        </div>
+        
+<section class="product-kp">
+    <div class="container-kp">
+        <div class="grid-kp">
+
+            <div class="product-area-kp">
+                <div class="dish">
+                    <img src="img/pg1.jpg" alt="">
+                </div><!-- dish -->
+            </div> <!-- product-area-kp -->
+            
+            <div class="product-text-kp">
+                <div class="kp-title">
+                    <h2>ผัดกะเพราไก่</h2>
+                    <div class="line"></div>
+                    <p>รายละเอียด</p>
+                    <label for="" class="info-kp">
+                        กะเพรา เป็นสมุนไพรรสเผ็ดร้อน มีสรรพคุณบำรุงธาตุไฟ ขับลม แก้ปวดท้อง แก้จุกเสียดแก้คลื่นเหียนอาเจียน มีเบต้า - แคโรทีน และวิตามินซี การนำมาผัดกับหมู และเครื่องปรุงต่างๆ จึงทำให้ได้รับโปรตีน และเกลือแร่ ส่วนพริกมีสารแคปไซซินในพริก มีคุณสมบัติต้านอนุมูลอิสระ กระเทียมมีสารออร์แกโนซัลเฟอร์ ต่อต้านการเจริญเติบโตของแบคทีเรียบางชนิดที่ก่อมะเร็งได้
+                    </label>
+                </div> <!-- kp-title -->
+            </div> <!-- product-text-kp -->
+        </div>
+    </div>
+</section> <!-- product-kp -->
+
+<section class="add-area">
+    <div class="title-add"><h2>เพิ่มเติม</h2></div>
+    <div class="container-add">
+    
+    <div class="grid-add">
+
+        <div class="add-icon">
+            <img src="fea/chicken-leg.png" alt="">
+            <div class="add-text">
+                <label for="">เนื้อไก่</label>
+            <p>(+10 บาท)</p>
+            </div> <!-- add-text -->
+            
+            <div class="btn-add">
+                <button id="btn-decrease" class="negative">-</button>
+                <input type="name" class="number-input" placeholder="1" value="1" min="1" data-step="1">
+                <button class="pass">+</button>
+            </div> <!-- btn-add -->
+        </div><!-- add-icon -->
+
+        <div class="add-icon">
+            <img src="fea/rice-bowl.png" alt="">
+            <div class="add-text">
+                <label for="">ข้าว/ทัพพี</label>
+            <p>(+5 บาท)</p>
+            </div> <!-- add-text -->
+            
+            <div class="btn-add">
+                <button id="btn-decrease" class="negative">-</button>
+                <input type="name" class="number-input" placeholder="1" value="1" min="1" data-step="1">
+                <button class="pass">+</button>
+            </div> <!-- btn-add -->
+        </div><!-- add-icon -->
+
+        <div class="add-icon-3">
+            
+                <img src="fea/plate.png" alt="">
+                <label for="">ไซส์จานข้าว</label>
+          
+            <div class="text-add-3">
+                <p>S</p>
+                <p>M</p>
+                <p>L</p>
+                <p>XL</p>
+            </div>
+        </div>
+                
+        
+    </div> <!-- grid-add -->
+        <div class="chilli-icon">
+            <img src="fea/chilli.png" alt="">
+            <h2>ระดับความเผ็ด</h2>
+            <div class="slideContainer">
+
+                <input type="range" min="1" max="10" value="5" id="myRange" class="slider-chilli">
+            </div>
+        </div>
+        
+
+            
+</div> <!-- container -->
+        
+<div class="line-end"></div>
+</section> <!-- add-area -->
+
+
+<section class="special-2">
+    <div class="title-sp2">
+        <h2>พิเศษใส่ไข่</h2>
+    </div>
+
+    <div class="grid-area-special">
+        <div class="container-special">
+            <div class="special-area">
+        
+                <div class="grid-item-special">
+
+                    <div class="special-item">
+                        <img src="fea/boiled-egg.png" alt="">
+                        <div class="add-text">
+                            <label for="">ไข่ต้ม</label>
+                            <p>(+10 บาท/ฟอง)</p>
+                        </div> <!-- add-text -->
+                        <div class="btn-add">
+                            <button id="btn-decrease" class="negative">-</button>
+                            <input type="name" class="number-input" placeholder="1" value="1" min="1" data-step="1">
+                            <button class="pass">+</button>
+                        </div> <!-- btn-add -->
+                    </div><!-- special-item -->
+                    
+                    <div class="dropdown">
+                        <button class="drop-btn">เลือกระดับความสุข <i class="fas fa-chevron-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="#">สุกมาก</a>
+                            <a href="#">สุกพอดี</a>
+                            <a href="#">กำลังพอดี</a>
+                            <a href="#">ยางมะตูม</a>
+                        </div> <!-- dropdown-content -->
+                    </div><!-- dropdown -->
+                    <div class="line-sp"></div>
+                </div><!-- grid-item-special -->
+                
+                <div class="grid-item-special">
+                    
+                    <div class="special-item">
+                        <img src="fea/fried-egg.png" alt="">
+                        <div class="add-text">
+                            <label for="">ไข่ดาว</label>
+                            <p>(+10 บาท)</p>
+                        </div> <!-- add-text -->
+                        <div class="btn-add">
+                            <button id="btn-decrease" class="negative">-</button>
+                            <input type="name" class="number-input" placeholder="1" value="1" min="1" data-step="1">
+                            <button class="pass">+</button>
+                        </div> <!-- btn-add -->
+                    </div><!-- special-item -->
+                    
+                    <div class="dropdown">
+                        <button class="drop-btn">เลือกระดับความสุข <i class="fas fa-chevron-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="#">ไข่แดงไม่สุก</a>
+                            <a href="#">ไข่แดงกำลังพอดี</a>
+                            <a href="#">ไข่แดงเกือบสุก</a>
+                            <a href="#">ไข่แดงสุก</a>
+                        </div> <!-- dropdown-content -->
+                    </div><!-- dropdown -->
+                    <div class="line-sp"></div>
+                </div><!-- grid-item-special -->
+                
+                <div class="grid-item-special">
+                    
+                    <div class="special-item">
+                        <img src="fea/Group 355.png" alt="">
+                        <div class="add-text">
+                            <label for="">ไข่เจียว</label>
+                            <p>(+10 บาท/ฟอง)</p>
+                        </div> <!-- add-text -->
+                        <div class="btn-add">
+                            <button id="btn-decrease" class="negative">-</button>
+                            <input type="name" class="number-input" placeholder="1" value="1" min="1" data-step="1">
+                            <button class="pass">+</button>
+                        </div> <!-- btn-add -->
+                    </div><!-- special-item -->
+                    
+                    <div class="line-sp"></div>
+                </div><!-- grid-item-special -->
+                
+                
+            </div><!-- special-area -->
+                    
+            
+                
+                    
+        </div><!-- container-add -->
+    </div><!-- grid-area-special -->
+            
+</section>
+
+<section class="sauces-area">
+    <div class="container-sauces">
+    
+    <div class="title-sauce">
+        <h2>ซอสเพิ่มเติม</h2>
+    </div> <!-- title-sauces -->
+    
+    <div class="grid-area-sauces">
+        
+        <div class="grid-sauce">
+                <img src="img2/sauce1.png" alt="">
+                <p>ซอสมะเขือกเทศ</p>
+            </div> <!-- grid-sauce -->
+            
+            <div class="grid-sauce">
+                <img src="img2/sauce2.png" alt="">
+                <p>ซอสมะเขือกเทศ</p>
+            </div> <!-- grid-sauce -->
+            
+            <div class="grid-sauce">
+                <img src="img2/food-pack.png" alt="">
+                <p>ซอสมะเขือกเทศ</p>
+                
+                <div class="keed-area">
+                    <div class="keed"></div>
+                    <div class="keed"></div>
+                    <div class="keed"></div>
+                </div>
+            </div> <!-- grid-sauce -->
+
+      
+        </div> <!-- grid-area-sauce -->
+    </div><!-- container-sauces -->
+</section> <!-- sauces-area -->
+
+
+<section class="confuse-area">
+    <div class="grid-area-confuse">
+        <div class="container-confuse">
+
+            <div class="grid-confuse">
+
+                <div class="grid-cf">
+
+                    <img  id="img-cf"src="img2/confusion.png" alt="">
+                </div>
+                
+                <div class="grid-item-cf">
+
+                    <div class="text-confuse-area">
+                        <label for="">
+                            <p>เลือกไม่ถูกอยู่เหรอ</p>
+                            <p>ไม่รู้จะใส่วัตถุดิบอะไร</p>
+                            <p>กินอะไรก็ได้คลิกเลย</p>
+                        </label>
+                    </div> <!-- text-confuse-area- -->
+                    
+                    <div class="grid-btn-confuse">
+                        <button id="whatever">อะไรก็ได้</button>
+                        <button id="default" class="btn-cf-2">ค่าเริ่มต้น</button>
+                    </div> <!-- grid-btn-confuse -->
+                
+                </div> <!-- grid-item-cf -->
+                    
+            </div> <!-- grid-confuse -->
+            
+        </div> <!-- container-confuse -->
+            
+    </div> <!-- grid-area-confuse -->
+            
+</section><!-- confuse-area -->
+
+<section class="totalprice">
+    <div class="container-tp">
+        <div class="grid-tp-area">
+
+            <div class="grid-item-tp">
+                <div class="tp-text">
+                    <label for="">จำนวน</label>
+                </div> <!-- add-text -->
+
+                
+                <div class="btn-add">
+                    <button id="btn-decrease" class="negative">-</button>
+                    <input type="name" class="number-input" placeholder="1" value="1" min="1" data-step="1">
+                    <button class="pass">+</button>
+                </div> <!-- btn-add -->
+            </div> <!-- grid-item-tp -->
+            
+            <div class="grid-item-tp-2">
+                <p>ราคาสุทธิ</p>
+                <label> 50 บาท</label>
+                </div> <!-- btn-add -->
+            </div> <!-- grid-item-tp -->
+
+            <div class="grid-item-tp-btn">
+                <button id="detail-tp">ดูรายละเอียดวัตถุดิบ</button>
+                <button id="cart-tp">เพิ่มลงตะกร้า</button>
+            </div> <!-- grid-item-tp-btn -->
+        </div> <!-- grid-tp-area -->
+    </div> <!-- container-tp -->
+</section>
+
+<section class="slide-wrapper">
+    <div class="carousel owl-carousel">
+
+      <div class="card card-1">
+          <div class="dish-slider">
+              <div class="dish-sc">
+                <img src="img/pg1.jpg">
+              </div> <!-- dish-sc -->
+
+              <div class="text-pic1">
+                  <p>ผัดกระเพราไก่</p>
+                  <p>65 บาท</p>
+              </div> <!-- text-pc1 -->
+          </div><!-- dish-slider -->
+        </div> <!-- card card-1 -->
+        
+        <div class="card card-1">
+            <div class="dish-slider">
+                <div class="dish-sc">
+                  <img src="img/pg2.jpg">
+                </div> <!-- dish-sc -->
+
+                <div class="text-pic1">
+                    <p>ผัดกระเพราหมู</p>
+                    <p>60 บาท</p>
+                </div> <!-- text-pc1 -->
+            </div><!-- dish-slider -->
+          </div> <!-- card card-1 -->
+          
+          <div class="card card-1">
+              <div class="dish-slider">
+                  <div class="dish-sc">
+                    <img src="img/pg3.jpg">
+                  </div> <!-- dish-sc -->
+  
+                  <div class="text-pic1">
+                      <p>ผัดกระเพราปลากราย</p>
+                      <p>65 บาท</p>
+                  </div> <!-- text-pc1 -->
+              </div><!-- dish-slider -->
+            </div> <!-- card card-1 -->
+            
+            <div class="card card-1">
+                <div class="dish-slider">
+                    <div class="dish-sc">
+                      <img src="img/pg4.jpg">
+                    </div> <!-- dish-sc -->
+    
+                    <div class="text-pic1">
+                        <p>ผัดกระเพราหมึก</p>
+                        <p>65 บาท</p>
+                    </div> <!-- text-pc1 -->
+                </div><!-- dish-slider -->
+              </div> <!-- card card-1 -->
+              
+              <div class="card card-1">
+                  <div class="dish-slider">
+                      <div class="dish-sc">
+                        <img src="img/pga1.jpg">
+                      </div> <!-- dish-sc -->
+      
+                      <div class="text-pic1">
+                          <p>ผัดกระเพราวากิว</p>
+                          <p>65 บาท</p>
+                      </div> <!-- text-pc1 -->
+                  </div><!-- dish-slider -->
+                </div> <!-- card card-1 -->
+
+
+      
+   </div> <!-- carousel owl-carousel -->
+
+   <div class="grid-item-slider-btn">
+    <button id="slider-btn">ดูรายละเอียดวัตถุดิบ</button>
+    <button id="slider-btn2">เพิ่มลงตะกร้า</button>
+</div> <!-- grid-item-tp-btn -->
+
+  </section> <!-- slide-wrapper -->
+<script>
+    $(".carousel").owlCarousel({
+      margin: 20,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      responsive: {
+        0:{
+          items:1,
+          nav: false
+        },
+        600:{
+          items:2,
+          nav: false
+        },
+        1000:{
+          items:3,
+          nav: false
+        }
+      }
+    });
+    const buttons = document.querySelectorAll("a");
+  buttons.forEach((button) => {
+    button.onclick = function(e){
+      let x = e.clientX - e.target.offsetLeft;
+      let y = e.clientY - e.target.offsetTop;
+      let ripple = document.createElement("span");
+      ripple.style.left = `${x}px`;
+      ripple.style.top = `${y}px`;
+      this.appendChild(ripple);
+      setTimeout(function(){
+        ripple.remove();
+      }, 600); // 1second = 1000ms
+    }
+  });
+
+  </script>
+  
+  <footer>
+    <div class="logo-ft">
+        <img src="img/pngkp.png" width="200" height="200">
+    </div>    
+    <div class="ft-text">
+        <ul class="footer-t">
+            <li>หน้าหลัก</li>
+            <li>เกี่ยวกับเรา</li>
+            <li>นโยบายข้อมูลส่วนตัว</li>
+            <li>ติดต่อ</li>
+            <li>ช่วยเหลือ</li>
+            
+        </ul>
+        <div class="logo-transaction">
+            
+            <div class="logo-t-1">
+                <img src="img/paypal.png" alt="">
+                <img src="img/visa.png" alt="">
+                <img src="img/mastercardlo.png" alt="">
+            </div>
+            
+            <div class="logo-t-2">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-google-plus"></i>
+                <i class="fab fa-instagram-square"></i>
+            </div>
+   
+        </div> <!-- logo-transaction -->
+   
+     
+       </div> <!-- logo-contact -->
+   </footer><!-- ft-text -->
+
+
+
+
+
+        
+
+
+</body>
+</html>

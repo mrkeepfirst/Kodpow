@@ -1,0 +1,786 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  font-family: prompt;
+  
+}
+@font-face {
+  font-family: prompt;
+  src: url(fonts/Prompt-Light.ttf);
+}
+
+/* nav */
+
+.Container{
+  max-width: 100%;
+} 
+nav{
+  display: flex;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  background: #ECECEC;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+nav .logo{
+  margin: 0;
+  margin-top: -35px;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 35px;
+  margin-top: -30px;
+}
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.active-menu{
+  border-bottom: 2px solid #000;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: black;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  margin-top: -20px;
+}
+input[type="checkbox"]{
+  display: none;
+}
+.dropbtn {
+  background-color: #fc5454;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  /* padding: 20px; */
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ff3b3b;
+}
+.contect{
+  width: 100%;
+  height: 800px;
+}
+.promotion img{
+  width: 100%;
+}
+.delivery{
+  max-width: 960px;
+}
+.wrapper{
+  display: inline-flex;
+  height: 50px;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  margin-top: -90px;
+}
+.wrapper .option{
+  background: #fff;
+  height: 100%;
+  min-width: 200px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 20px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+.wrapper .option .dot{
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+.wrapper .option .dot::before{
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: red;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2{
+  border-color: white;
+  background: red;
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot{
+  background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before{
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper .option span{
+  font-size: 18px;
+  color: #808080;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span{
+  color: #fff;
+}
+
+.option-2 span{
+  
+}
+/* banner */
+
+.img-container{
+  max-width: 100%;
+  width: 100%;
+  min-height: 550px;
+  
+  background-image: url(img/promotion.jpg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  object-position: center;
+  object-fit: cover;
+  padding-top: 30rem;
+
+}
+
+.innter-container a{
+  margin: 0 auto;
+  /* margin-top: 28rem; */
+  
+  height: 60px;
+  width: 200px;
+  display: block;
+
+  line-height: 60px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  
+  background: linear-gradient(-90deg, #f5ce62, #e85a19);
+}
+
+
+
+.innter-container a:hover{
+  background: linear-gradient(-180deg, #f5ce62, #e85a19);
+
+}
+
+/* banner */
+article h2{
+  color: #fff;
+  font-size: 30px;
+  padding: 15px;
+}
+
+#area-ab{
+  background-color: #333;
+  max-width: 100%;
+  width: 100%;
+  min-height: 500px;
+
+  /* max-height: 100%; */
+
+  margin: 0 auto;
+
+
+}
+
+
+.grid-ab{
+  background-color: #333;
+
+  display: flex;
+ 
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+ 
+}
+
+.img-ab img{
+  max-width: 100%;
+  width: 500px;
+  height: 340px;
+
+  object-fit: cover;
+
+
+}
+
+.content-ab{
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+  padding: 15px;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-left: 50px;
+
+}
+article h2{
+  text-align: center;
+  font-size: 35px;
+}
+
+
+.content-ab p{
+  font-size: 25px;
+  padding: 15px;
+}
+
+
+#map{
+  
+  max-width: 100%;
+  width: 100%;
+}
+.area-map{
+  max-width: 100%;
+  width: 100%;
+
+}
+/* menu-contact */
+
+.ic-banking-area{
+  width: 100%;
+  max-width: 100%;
+  min-height: 250px;
+
+  background-color: #FEF9DC;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.ic-area h2{
+  font-size: 30px;
+}
+.lg-bk img{
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+
+/* ---------->>>>>>>>contact <<<<<<<<-------------- */
+
+.contact{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(img/bg.jpg);
+  background-size: cover;
+  flex-direction: column;
+
+}
+.contact .content{
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact .content h2{
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+}
+.contact .content p{
+  color: #fff;
+  font-weight: 300;
+}
+
+.container-contact{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+}
+.contactInfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-contact .contactInfo .box-item{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container-contact .contactInfo .box-item .icon{
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.container-contact .contactInfo .box-item .text-contact{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+.container-contact .contactInfo .box-item .text-contact{
+  font-weight: 500;
+  color: #fff;
+}
+
+.contactForm{
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+  border-radius: 15px;
+}
+.contactForm h2{
+  font-size: 30px;
+  color: #000;
+  font-weight: 500;
+}
+.contactForm .inputBox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  resize: none;
+
+}
+
+.contactForm .inputBox span{
+  position: absolute;
+  left: 0;
+  
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+
+  color: linear-gradient(#f5ce62, #e85a19);
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]
+{
+  width: 100px;
+  background: linear-gradient(-90deg, #f5ce62, #e85a19);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+.contactForm .inputBox input[type="submit"]:hover{
+  
+  background: linear-gradient(-180deg, #f5ce62, #e85a19);
+
+}
+
+
+/* end contact */
+
+
+.ic-banking-area h2{
+  text-align: center;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+.ic-area{
+  /* background-color: red; */
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  
+
+}
+.frame-ic{
+  max-width: 100%;
+  /* min-height: 250px; */
+}
+
+.ic-bk{
+  width: 50%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.lg-bk img{
+  width: 120px;
+  max-width: 100%;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.ic-pay{
+  /* background-color: royalblue; */
+  width: 50%;
+  /* float: left; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.lg-p img{
+  width: 120px;
+  padding: 5px;
+  max-width: 100%;
+}
+
+
+
+
+
+/* footer */
+
+footer{
+  background-color: rgb(56, 56, 56);
+  /* min-height: 350px; */
+  height: auto;
+  
+  cursor: pointer;
+}
+.logo-ft {
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+.logo-ft img{
+  width: 250px;
+  max-width: 100%;
+  object-position: center;
+  object-fit: cover;
+  
+}
+.ft-text .footer-t{
+  list-style: none;
+  
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+.ft-text li{
+  display: inline-block;
+  padding: 20px;
+}
+.logo-transaction{
+  padding: 0 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.logo-t-2 i{
+  font-size: 50px;
+  padding: 4px;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+
+.footer-t li:hover{
+  border-bottom: 1px solid #fff;
+}
+
+.logo-t-2 i:hover{
+  background: -webkit-linear-gradient(#f5ce62, #e85a19);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo-transaction img{
+  width: 100px;
+  /* display: flex; */
+  /* float: left; */
+  display: inline-block;
+  vertical-align: middle;
+  
+  margin: 0 auto;
+}
+/* @media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+} */
+@media only screen and (max-width: 768px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #d4d4d4;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: rgb(255, 153, 0);
+  }
+  .active-menu{
+    border-bottom: 1px solid #fff;
+    width: 100%;
+  }
+  .wrapper{
+    display: none;
+  }
+  article h2{
+    display: flex;
+    justify-content: center;
+}
+
+.grid-ab {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.img-ab{
+    margin: 0 auto;
+}    
+
+.content-ab{
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* map */
+
+/* mennubar */
+
+
+/* icon banking */
+.container{
+width: 60%;
+}
+
+article h2{
+  padding: 35px;
+}
+.img-ab img{
+  width: 100%;
+  padding: 10px;
+  
+  object-fit: cover;
+}
+.img-ab{
+  padding: 25px;
+}
+
+.content-ab{
+  width: 70%;
+}
+.content-ab p{
+  font-size: 20px;
+}
+
+/* menu-conctact */
+
+
+.contact{
+  padding: 50px;
+}
+.container-contact{
+  flex-direction: column;
+}
+.contactForm{
+  width: 100%;
+}
+ 
+
+
+.ic-bk{
+  float: none;
+  margin: 0 auto;
+}
+.ic-pay{
+  float: none;
+  margin: 0 auto;
+}
+/* footer */
+/* footer */
+.logo-transaction .logo-t-1{
+  text-align: center;
+ }
+ 
+ .logo-transaction{
+ display: block;
+  text-align: center;
+ }
+ .logo-t-1{
+  text-align: center;
+ }
+ .btns{
+   width: 100%;
+   margin: auto;
+ }
+ 
+ footer{
+   min-height: 300px;
+ }
+
+} /* tablet */
+
+@media only screen and (max-width: 375px) {
+#map{
+  height: 100%;
+}
+
+  .contactInfo{
+    width: 100%;
+    display: block;
+    
+  }
+
+.contactForm form h2{
+  font-size: 22px;
+}
+
+.ic-banking-area{
+  /* height: 100px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+} /* mobile */
